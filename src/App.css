@@ -1,0 +1,227 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+button,
+input,
+select {
+  font-family: "League Spartan", sans-serif;
+}
+
+
+:root {
+  --color-bg: #f8f8fb;
+  --color-bg-secondary: #f9fafe;
+  --color-bg-tertiary: #fff;
+  --color-bg-other: #252945;
+  --color-sidebar: #373b53;
+  --color-purple-primary: #7c5dfa;
+  --color-purple-secondary: #9277ff;
+  --color-grey-primary: #dfe3fa;
+  --color-red-primary: #ec5757;
+  --color-red-secondary: #ff9797;
+  --color-text: #0c0e16;
+  --color-text-secondary: #7e88c3;
+  --color-text-tertiary: #888eb0;
+  --color-white: #fff;
+  --color-orange: #ff8f00;
+  --color-green: #33d69f;
+  --color-footer: #373b53;
+  --color-modal: #fff;
+
+  --row-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.1);
+  --input-shadow: 0px 10px 20px 0px rgba(72, 84, 159, 0.25);
+  --dropdown-shadow: 0px 10px 20px 0px rgba(72, 84, 159, 0.25);
+  --footer-shadow: drop-shadow(0px -10px 20px rgba(150, 155, 191, 0.25));
+}
+
+.dark {
+  --color-bg: #141625;
+  --color-bg-secondary: #252945;
+  --color-bg-tertiary: #1e2139;
+  --color-bg-other: transparent;
+  --color-sidebar: #1e2139;
+  --color-purple-primary: #7c5dfa;
+  --color-purple-secondary: #9277ff;
+  --color-red-primary: #ec5757;
+  --color-red-secondary: #ff9797;
+  --color-text: #fff;
+  --color-grey-primary: #252945;
+  --color-text-secondary: #888eb0;
+  --color-text-tertiary: #888eb0;
+  --color-white: #fff;
+  --color-orange: #ff8f00;
+  --color-green: #33d69f;
+  --color-footer: #0c0e16;
+  --color-modal: #141625;
+
+  --row-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.1);
+  --input-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  --dropdown-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  --footer-shadow: drop-shadow(0px -10px 20px rgba(5, 9, 31, 0.25));
+}
+
+.heading-L {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.125px;
+  color: var(--color-text);
+}
+
+.heading-M {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.75px;
+  color: var(--color-text);
+}
+
+.heading-S {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: -0.25px;
+  color: var(--color-text);
+}
+
+.heading-S-variant {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: -0.25px;
+  color: var(--color-text);
+}
+
+.body-M {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  letter-spacing: -0.1px;
+  color: var(--color-text);
+}
+
+.body-M-variant {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: -0.1px;
+  color: var(--color-text);
+}
+
+label {
+  color: var(--color-text-secondary);
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: -0.1px;
+}
+
+input,
+select {
+  padding: 1.6rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--color-grey-primary);
+  background: var(--color-bg-tertiary);
+  color: var(--color-text);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: -0.25px;
+  outline: none;
+  height: 4.8rem;
+}
+
+select {
+  cursor: pointer;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png);
+  background-repeat: no-repeat;
+  background-position-x: 92%;
+  background-position-y: 1.5rem;
+}
+
+input:focus {
+  border: 1px solid var(--color-purple-secondary) !important;
+}
+
+option {
+  padding: 1.6rem 2.4rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url("../src/assets/Shape.svg") no-repeat;
+  border-width: thin;
+  cursor: pointer;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.error label {
+  color: var(--color-red-primary);
+}
+
+.error input {
+  border-color: var(--color-red-primary);
+}
+
+.message {
+  color: var(--color-red-primary);
+  font-size: 1.2rem;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.modal {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+button:disabled{
+  cursor: default;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  .heading-L {
+    font-size: 2.4rem;
+    line-height: normal;
+  }
+}
+
